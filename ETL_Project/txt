@@ -1,1 +1,17 @@
-The strip() function only removes characters from the very outside edges (the start and the end
+cleaned stock market  ETL Pipeline
+
+A Python-based Extract, Transform, Load (ETL) pipeline that fetches paginated Indian stock market data, cleans messy financial metrics, engineers new business features, and exports the structured data to CSV and JSON formats.
+
+##  Features
+
+- **Extraction:** Handles paginated API requests to fetch complete datasets.
+- **Data Cleaning:** Parses messy string formats (e.g., `"₹ 28,355 Cr."`, `"01-Apr-99"`) into proper numeric and datetime types.
+- **Feature Engineering:** Calculates financial metrics like `price_to_book_ratio`, `upside_from_low`, and categorizes stocks by market cap and PE ratio.
+- **Modular Architecture:** Code is strictly separated into Extract, Transform, and Load modules.
+
+## ️ Tech Stack
+
+- Python
+- Pandas
+- Requests
+- Pathlib
